@@ -23,9 +23,10 @@ populateBoard(16);
 function changeSize(input){
     
         if(input >= 2 && input <= 100){
+            document.querySelector('.error').innerHTML = '';
             populateBoard(input);
         }else{
-            console.log("too many squares");
+            document.querySelector('.error').innerHTML = 'Input must be between 2 and 100';
         }
 
 }
@@ -51,11 +52,13 @@ function resetBoard(){
     squares.forEach((div) => div.style.backgroundColor = 'white');
 }
 
-document.querySelector('body').addEventListener('click', () => {
+document.querySelector('body').addEventListener('click', (e) => {
+   if(e.target.tagName != 'BUTTON'){
     click = !click;
     if(click){
         document.querySelector('.mode').innerHTML = 'Mode: Coloring';
     }else{
-        document.querySelector('.mode').innerHTML = 'Mode: Not Coloring'
+        document.querySelector('.mode').innerHTML = 'Mode: Not Coloring';
     }
+   }
 });
