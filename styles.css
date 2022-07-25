@@ -30,3 +30,74 @@
     max-width: 600px;
     max-height: 600px;
 }
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.blackButton {
+    background-color: black;
+    color: white;
+}
+
+.blackButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.redButton {
+    background-color: red;
+    color: white;
+}
+
+.redButton:hover {
+    background-color: white;
+    color: red;
+}
+
+.eraserButton {
+    background-color: white;
+    color: black;
+}
+
+.eraserButton:hover {
+    background-color: black;
+    color: white;
+}
+
+.randomButton{
+    color: red;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+.randomButton:hover {
+    color: white;
+}
+
+input {
+    width: 50px;
+}
+
+.mode {
+    margin-bottom: 5px;
+}
