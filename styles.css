@@ -8,6 +8,13 @@
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,51,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
+.title {
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: white;
+    font-size: 2em;
+}
+
+
 .board {
     width: 80%;
     height: 80%;
@@ -25,8 +32,8 @@
     align-items: center;
     min-width: 300px;
     min-height: 300px;
-    width: 60vw;
-    height: 60vh;
+    width: 80vw;
+    height: 80vh;
     max-width: 600px;
     max-height: 600px;
 }
@@ -100,4 +107,11 @@ input {
 
 .mode {
     margin-bottom: 5px;
+    color: white;
+    font-style: italic;
+}
+
+
+.error {
+    color: white;
 }
